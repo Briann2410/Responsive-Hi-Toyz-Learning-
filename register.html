@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HI-Toyz</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/register.css" />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">HI-Toyz</a>
+      <div class="navbar-nav">
+        <a href="index.html">Home</a>
+        <a href="product.html">Product</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="event.html">Event</a>
+        <a href="#">Register</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- register Section Start -->
+    <section id="register" class="register">
+      <h2>Register</h2>
+
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6621.037824131261!2d106.93776754218622!3d-6.33948541278731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1685957153592!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
+
+        <form action="">
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" id="name" placeholder="Name" />
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="text" placeholder="Email" id="email"/>
+          </div>
+          <div class="input-group">
+            <i data-feather="lock"></i>
+            <input type="text" placeholder="Password" id="password"/>
+          </div>
+          <div class="input-group">
+            <i data-feather="lock"></i>
+            <input type="text" placeholder="ConfirmPassword" id="cpassword"/>
+          </div>
+          <div class="input-group">
+            <i data-feather="calendar"></i>
+            <input type="date" placeholder="" id="date"/>
+          </div>
+          <div class="">
+            <label for="input-check">by clicking this checkbox you agree <br>to our terms & agreement</label>
+            <input type="checkbox" name="check" id="check">
+          </div>
+          <button type="button" class="btn" onclick="validate()">Register</button>
+          <div class="">
+            <p id="error-message"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- register Section End -->
+
+    <!-- footer start -->
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="product.html">Product</a>
+        <a href="gallery.html">Galerry</a>
+        <a href="event.html">Event</a>
+        <a href="#">Register</a>
+      </div>
+
+      <div class="credit">
+        <p>Created by <a href="">Brian Noel Matahelumual</a>. | &copy; 2023</p>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
